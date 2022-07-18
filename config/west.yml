@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: barbellboards
-      url-base: https://github.com/barbellboards
+      url-base: https://github.com/barbellboards/Rollow-ZMK
   projects:
     - name: zmk
       remote: barbellboards
