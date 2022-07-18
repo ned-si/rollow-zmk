@@ -3,6 +3,9 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
 
+    - name: osleg
+      url-base: https://github.com/osleg
+
     # - name: barbellboards
     #   url-base: https://github.com/barbellboards
 
@@ -11,7 +14,7 @@ manifest:
 
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: osleg
       revision: main
       import: app/west.yml
 
