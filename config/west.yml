@@ -6,11 +6,11 @@ manifest:
 #     - name: osleg
 #       url-base: https://github.com/osleg
 
-    - name: barbellboards
-      url-base: https://github.com/barbellboards
+#     - name: barbellboards
+#       url-base: https://github.com/barbellboards
 
-    # - name: nickconway
-    #   url-base: https://github.com/nickconway
+    - name: nickconway
+      url-base: https://github.com/nickconway
 
   projects:
 
@@ -19,15 +19,15 @@ manifest:
 #       revision: main
 #       import: app/west.yml
 
-#     - name: zmk
-#       remote: nickconway
-#       revision: dev
-#       import: app/west.yml
-
-    - name: Rollow-ZMK
-      remote: barbellboards
-      revision: barbellboards/rollow
+    - name: zmk
+      remote: nickconway
+      revision: dev
       import: app/west.yml
+
+#     - name: Rollow-ZMK
+#       remote: barbellboards
+#       revision: barbellboards/rollow
+#       import: app/west.yml
 
   self:
     path: config
