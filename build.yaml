@@ -17,3 +17,5 @@ include:
     shield: rollow_left
   - board: nice_nano
     shield: rollow_right
+  - board: nice_nano
+    shield: settings_reset
