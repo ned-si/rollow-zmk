@@ -1,0 +1,25 @@
+// layers
+#define MAIN 0
+#define SYM 1
+#define NUM 2
+#define ACC 3
+#define NAV 4
+
+//homerow
+#define HM_A &hm_asemi LGUI A
+#define HM_S &hm_sl LALT S
+#define HM_D &hm_dk LCTRL D
+#define HM_F &hm_fj LSHFT F
+#define HM_G &hm_gh ACC G
+#define HM_SEMI &hm_asemi LGUI SEMI
+#define HM_L &hm_sl LALT L
+#define HM_K &hm_dk LCTRL K
+#define HM_J &hm_fj LSHFT J
+#define HM_H &hm_gh ACC H
+
+//bluetooth
+#define BT0 &bt BT_SEL 0 
+#define BT1 &bt BT_SEL 1 
+#define BT2 &bt BT_SEL 2 
+#define BT3 &bt BT_SEL 3 
+#define BT4 &bt BT_SEL 4 
