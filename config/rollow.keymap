@@ -61,14 +61,14 @@
                         >;
                 };
 
-                accents_layer {
-                        bindings = <
-   &trans    &trans    &e_acute  &e_grave  &trans      &ded_uml  &u_grave  &i_circu   &o_circu &trans
-   &a_grave  &a_circu  &e_circu  &trans    &trans      &ded_cir  &trans    &trans     &trans   &trans   
-   &trans    &trans    &c_cdila  &trans    &trans      &trans    &trans    &trans     &trans   &trans   
-                       &trans    &trans    &trans      &trans    &trans    &trans   
-                        >;
-                };
+/*                 accents_layer { */
+/*                         bindings = < */
+/*    &trans    &trans    &e_acute  &e_grave  &trans      &ded_uml  &u_grave  &i_circu   &o_circu &trans */
+/*    &a_grave  &a_circu  &e_circu  &trans    &trans      &ded_cir  &trans    &trans     &trans   &trans */   
+/*    &trans    &trans    &c_cdila  &trans    &trans      &trans    &trans    &trans     &trans   &trans */   
+/*                        &trans    &trans    &trans      &trans    &trans    &trans */   
+/*                         >; */
+/*                 }; */
 
                 nav_layer {
                         bindings = <
