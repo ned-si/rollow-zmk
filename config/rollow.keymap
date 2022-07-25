@@ -43,14 +43,14 @@
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
-                sym_layer {
-                        bindings = <
-   &trans    &trans     &kp EQUAL &degr     &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
-   &trans    &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
-   &trans    &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH
-                           &trans    &trans    &trans     &trans   &kp UNDER &mo NAV
-                        >;
-                };
+/*                 sym_layer { */
+/*                         bindings = < */
+/*    &trans    &trans     &kp EQUAL &degr     &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans */
+/*    &trans    &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR */
+/*    &trans    &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH */
+/*                            &trans    &trans    &trans     &trans   &kp UNDER &mo NAV */
+/*                         >; */
+/*                 }; */
 
                 num_layer {
                         bindings = <
