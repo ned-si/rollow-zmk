@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "definitions.dtsi"
-/* #include "homerow.dtsi" */
+#include "homerow.dtsi"
 /* #include "combos.dtsi" */
 /* #include "accented_letters.dtsi" */
 /* #include "tapdances.dtsi" */
@@ -32,8 +32,7 @@
 
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
-   /* HM_A  HM_S  HM_D  HM_F  &kp G   &kp H HM_J   HM_K      HM_L    HM_SEMI */ 
-   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
+   HM_A  HM_S  HM_D  HM_F  &kp G   &kp H HM_J   HM_K      HM_L    HM_SEMI 
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
           &trans &mo SYM &kp TAB   &mo NUM &kp SPACE &trans
                         >;

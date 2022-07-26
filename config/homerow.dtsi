@@ -1,0 +1,53 @@
+/ {
+    behaviors {
+        hm_asemi: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <220>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preffered";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_sl: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <220>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preffered";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_dk: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <170>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preffered";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_fj: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preffered";
+        bindings = <&kp>, <&kp>;
+        };
+
+        hm_gh: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <160>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preffered";
+        bindings = <&mo>, <&kp>;
+        };
+    };
+};
