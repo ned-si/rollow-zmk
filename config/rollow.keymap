@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/* #include "definitions.dtsi" */
+#include "definitions.dtsi"
 /* #include "homerow.dtsi" */
 /* #include "combos.dtsi" */
 /* #include "accented_letters.dtsi" */
@@ -31,10 +31,11 @@
                 default_layer {
 
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P   
+   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
+   /* HM_A  HM_S  HM_D  HM_F  &kp G   &kp H HM_J   HM_K      HM_L    HM_SEMI */ 
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-                  &kp LGUI &mo 1 &mo 2       &kp RET &kp SPACE &kp RALT
+          &trans &mo SYM &kp TAB   &mo NUM &kp SPACE &trans
                         >;
 
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
