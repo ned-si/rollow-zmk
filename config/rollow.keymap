@@ -58,10 +58,10 @@
                 nav_layer {
                         bindings = <
    BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans   
-   &kp LGUI   &kp LALT   &kp LCTRL  &LSHFT    &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  
+   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  
    &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans  
                          &trans     &trans    &trans      &trans    &trans    &trans  
-                        >;
+                         >;
                 };
         };
 };
