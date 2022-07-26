@@ -8,9 +8,10 @@
 /* #include "accented_letters.dtsi" */
 /* #include "tapdances.dtsi" */
 
-#define COL   0
-#define COLL  1
-#define COLR  2
+/* to delete if things work without those define */
+/* #define COL   0 */
+/* #define COLL  1 */
+/* #define COLR  2 */
 
 / {
         keymap {
