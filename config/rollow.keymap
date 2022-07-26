@@ -26,15 +26,15 @@
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
-/*                 sym_layer { */
-/*                         bindings = < */
-/*    &trans       &trans     &kp EQUAL &degr     &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans */
-/*    &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR */
-/*    &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH */
-/*                            &trans    &trans    &trans     &trans   &kp UNDER &mo NAV */
-/*                         >; */
-/*                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; */
-                /* }; */
+                sym_layer {
+                        bindings = <
+   &trans       &trans     &kp EQUAL &degr     &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
+   &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
+   &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH
+                           &trans    &trans    &trans     &trans   &kp UNDER &mo NAV
+                        >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                };
 
                 num_layer {
                         bindings = <
