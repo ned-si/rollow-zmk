@@ -23,7 +23,6 @@
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
           &trans &mo SYM &kp TAB   &mo NUM &kp SPACE &trans
                         >;
-
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
@@ -35,7 +34,7 @@
 /*                            &trans    &trans    &trans     &trans   &kp UNDER &mo NAV */
 /*                         >; */
 /*                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; */
-/*                 }; */
+                /* }; */
 
                 num_layer {
                         bindings = <
@@ -64,5 +63,5 @@
 /*                          &trans     &trans    &trans      &trans    &trans    &trans */  
 /*                         >; */
 /*                 }; */
-
+        };
 };
