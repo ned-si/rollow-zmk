@@ -4,14 +4,9 @@
 
 #include "definitions.dtsi"
 #include "homerow.dtsi"
-/* #include "combos.dtsi" */
+#include "combos.dtsi"
 /* #include "accented_letters.dtsi" */
 /* #include "tapdances.dtsi" */
-
-/* to delete if things work without those define */
-/* #define COL   0 */
-/* #define COLL  1 */
-/* #define COLR  2 */
 
 / {
         keymap {
@@ -22,7 +17,7 @@
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    HM_A  HM_S  HM_D  HM_F  &kp G   &kp H HM_J   HM_K      HM_L    HM_SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-          &trans &mo SYM &kp TAB   &mo NUM &kp SPACE &trans
+          &trans &mo SYM &kp TAB   &kp UNDER &lt NUM SPACE &trans
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
@@ -32,9 +27,9 @@
    &trans       &trans     &kp EQUAL &trans    &kp DQT    &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
    &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
    &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH
-                           &trans    &trans    &trans     &trans   &kp UNDER &mo NAV
+                           &trans    &trans    &trans     &kp UNDER &mo NAV  &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 num_layer {
@@ -42,7 +37,7 @@
    &kp F9    &kp F10   &kp F11   &kp F12   &trans      &trans    &kp N7    &kp N8     &kp N9   &trans  
    &kp F5    &kp F6    &kp F7    &kp F8    &trans      &kp PLUS  &kp N4    &kp N5     &kp N6   &kp N0  
    &kp F1    &kp F2    &kp F3    &kp F4    &trans      &trans    &kp N1    &kp N2     &kp N3   &kp DOT 
-                       &mo NAV   &trans    &trans      &trans    &trans    &trans  
+                       &trans    &mo NAV   &trans      &trans    &trans    &trans  
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
