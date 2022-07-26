@@ -38,15 +38,15 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
-                num_layer {
-                        bindings = <
-   &kp F9    &kp F10   &kp F11   &kp F12   &trans      &trans    &kp N7    &kp N8     &kp N9   &trans  
-   &kp F5    &kp F6    &kp F7    &kp F8    &trans      &kp PLUS  &kp N4    &kp N5     &kp N6   &kp N0  
-   &kp F1    &kp F2    &kp F3    &kp F4    &trans      &trans    &kp N1    &kp N2     &kp N3   &kp DOT 
-                       &mo NAV   &trans    &trans      &trans    &trans    &trans  
-                        >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                };
+/*                 num_layer { */
+/*                         bindings = < */
+/*    &kp F9    &kp F10   &kp F11   &kp F12   &trans      &trans    &kp N7    &kp N8     &kp N9   &trans */  
+/*    &kp F5    &kp F6    &kp F7    &kp F8    &trans      &kp PLUS  &kp N4    &kp N5     &kp N6   &kp N0 */  
+/*    &kp F1    &kp F2    &kp F3    &kp F4    &trans      &trans    &kp N1    &kp N2     &kp N3   &kp DOT */ 
+/*                        &mo NAV   &trans    &trans      &trans    &trans    &trans */  
+/*                         >; */
+/*                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; */
+/*                 }; */
 
 /*                 accents_layer { */
 /*                         bindings = < */
@@ -57,13 +57,13 @@
 /*                         >; */
 /*                 }; */
 
-                nav_layer {
-                        bindings = <
-   BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans   
-   &kp LGUI   &kp LALT   &kp LCTRL  &LSHFT    &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  
-   &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans  
-                         &trans     &trans    &trans      &trans    &trans    &trans  
-                        >;
+/*                 nav_layer { */
+/*                         bindings = < */
+/*    BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans */   
+/*    &kp LGUI   &kp LALT   &kp LCTRL  &LSHFT    &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans */  
+/*    &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans */  
+/*                          &trans     &trans    &trans      &trans    &trans    &trans */  
+/*                         >; */
 
                 };
 
