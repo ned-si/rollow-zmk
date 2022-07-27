@@ -9,6 +9,10 @@
 /* #include "tapdances.dtsi" */
 
 / {
+        chosen {
+                zmk,matrix_transform = &five_column_transform;
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
