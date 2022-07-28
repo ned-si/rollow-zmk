@@ -23,7 +23,7 @@
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
           &trans &mo SYM &kp TAB   &kp UNDER &lt NUM SPACE &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 sym_layer {
@@ -33,7 +33,7 @@
    &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp AMPS &kp MINUS &kp LPAR &kp RPAR  &kp BSLH
                            &trans    &trans    &trans     &kp UNDER &mo NAV  &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 num_layer {
