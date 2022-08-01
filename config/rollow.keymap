@@ -5,7 +5,7 @@
 #include "definitions.dtsi"
 #include "homerow.dtsi"
 #include "combos.dtsi"
-/* #include "accented_letters.dtsi" */
+#include "unicode.dtsi"
 /* #include "tapdances.dtsi" */
 
 / {
@@ -35,7 +35,7 @@
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
-
+  
                 num_layer {
                         bindings = <
    &kp F9    &kp F10   &kp F11   &kp F12   &trans      &trans    &kp N7    &kp N8     &kp N9   &trans  
@@ -43,17 +43,17 @@
    &kp F1    &kp F2    &kp F3    &kp F4    &trans      &trans    &kp N1    &kp N2     &kp N3   &kp DOT 
                        &trans    &mo NAV   &trans      &trans    &trans    &trans  
                         >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
-/*                 accents_layer { */
-/*                         bindings = < */
-/*    &trans    &trans    &e_acute  &e_grave  &trans      &ded_uml  &u_grave  &i_circu   &o_circu &trans */
-/*    &a_grave  &a_circu  &e_circu  &trans    &trans      &ded_cir  &trans    &trans     &trans   &trans */   
-/*    &trans    &trans    &c_cdila  &trans    &trans      &trans    &trans    &trans     &trans   &trans */   
-/*                        &trans    &trans    &trans      &trans    &trans    &trans */   
-/*                         >; */
-/*                 }; */
+                accents_layer {
+                        bindings = <
+   &trans    &trans    &e_aig  &e_grv  &trans      &dead_uml  &u_grv  &i_cir   &o_cir &trans
+   &a_grv  &a_cir  &e_cir  &trans    &trans      &dead_cir  &trans    &trans     &trans   &trans   
+   &trans    &trans    &c_ced  &trans    &trans      &trans    &trans    &trans     &trans   &trans   
+                       &trans    &trans    &trans      &trans    &trans    &trans   
+                        >;
+                };
 
                 nav_layer {
                         bindings = <

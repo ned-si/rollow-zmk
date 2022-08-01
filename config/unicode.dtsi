@@ -1,0 +1,202 @@
+/ {
+    macros {
+
+        e_aig: e_aig {
+            label = "E_AIG";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N9>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        e_grv: e_grv {
+            label = "E_GRV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N8>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        e_cir: e_cir {
+            label = "E_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp A>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        e_uml: e_uml {
+            label = "E_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp B>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        a_cir: a_cir {
+            label = "A_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N2>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        a_uml: a_uml {
+            label = "A_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        i_cir: i_cir {
+            label = "I_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp E>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        i_uml: i_uml {
+            label = "I_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp F>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        o_cir: o_cir {
+            label = "O_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N4>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        o_uml: o_uml {
+            label = "O_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        u_grv: u_grv {
+            label = "U_GRV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N9>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        u_cir: u_cir {
+            label = "U_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp B>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        u_uml: u_uml {
+            label = "U_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp C>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        c_ced: c_ced {
+            label = "C_CED";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N7>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        degr: degr {
+            label = "DEGR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp B &kp KP_N0>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        euro: euro {
+            label = "EURO";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N2 &kp KP_N0 &kp A &kp C>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        euro: dead_cir {
+            label = "DEAD_CIR";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N2>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+
+        euro: dead_uml {
+            label = "DEAD_UML";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press $kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N8>
+                , <&macro_release ase &kp LALTkp LS(LCTRL)>
+                ;
+        };
+    }
+}
