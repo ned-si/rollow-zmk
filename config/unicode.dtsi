@@ -198,5 +198,5 @@
                 , <&macro_release ase &kp LALTkp LS(LCTRL)>
                 ;
         };
-    }
-}
+    };
+};
