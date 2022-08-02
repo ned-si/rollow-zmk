@@ -177,7 +177,7 @@
                 ;
         };
 
-        euro: dead_cir {
+        dead_cir: dead_cir {
             label = "DEAD_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -188,7 +188,7 @@
                 ;
         };
 
-        euro: dead_uml {
+        dead_uml: dead_uml {
             label = "DEAD_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
