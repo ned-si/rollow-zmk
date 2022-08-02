@@ -48,10 +48,10 @@
 
                 accents_layer {
                         bindings = <
-   &trans    &trans    &e_aig  &e_grv  &trans      &dead_uml  &u_grv  &i_cir   &o_cir &trans
-   &a_grv  &a_cir  &e_cir  &trans    &trans      &dead_cir  &trans    &trans     &trans   &trans   
-   &trans    &trans    &c_ced  &trans    &trans      &trans    &trans    &trans     &trans   &trans   
-                       &trans    &trans    &trans      &trans    &trans    &trans   
+   &trans   &trans   &e_aig   &e_grv   &trans   &dead_uml   &u_grv   &i_cir   &o_cir   &trans
+   &a_grv   &a_cir   &e_cir   &trans   &trans   &dead_cir   &trans   &trans   &trans   &trans
+   &trans   &trans   &c_ced   &trans   &trans   &trans      &trans   &trans   &trans   &trans
+                     &trans   &trans   &trans   &trans      &trans   &trans
                         >;
                 };
 
