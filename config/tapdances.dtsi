@@ -1,0 +1,28 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        ca_cc_cv: ca_cc_cv {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CA_CC_CV";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(C) >, <&kp LC(A)>;
+        };
+        nxt_prv: nxt_prv {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NXT_PRV";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C_NEXT>, <&kp C_PREV>;
+        }
+        cacaps: cacaps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CACAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&caps_word>, <&kp CAPS>;
+        }
+    };
+};
