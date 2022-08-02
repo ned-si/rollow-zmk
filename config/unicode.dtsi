@@ -45,6 +45,17 @@
                 ;
         };
 
+        a_grv: a_grv {
+            label = "A_GRV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LS(LC(U))>
+                , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N0>
+                , <&macro_release &kp LSHFT &kp LCTRL>
+                ;
+        };
+
         a_cir: a_cir {
             label = "A_CIR";
             compatible = "zmk,behavior-macro";
