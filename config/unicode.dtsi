@@ -6,7 +6,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N9>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -17,7 +17,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N8>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp A>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp B>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -50,7 +50,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N0>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N2>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -72,7 +72,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -83,7 +83,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp E>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -94,7 +94,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp F>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -105,7 +105,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N4>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -127,7 +127,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N9>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp B>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -149,7 +149,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp C>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -160,7 +160,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N7>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -171,7 +171,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp B &kp KP_N0>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -182,7 +182,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N2 &kp KP_N0 &kp A &kp C>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -193,7 +193,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N2>
                 , <&macro_tap &kp SPACE>
                 ;
@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LS(LC(U))>
+                = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N8>
                 , <&macro_tap &kp SPACE>
                 ;
