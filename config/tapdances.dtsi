@@ -39,7 +39,7 @@
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
         global-quick-tap;
-        bindings = <&kp>, <&caps_word>;
+        bindings = <&kp>, <&kp>;
         };
     };
 };
