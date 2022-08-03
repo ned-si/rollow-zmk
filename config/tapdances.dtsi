@@ -1,11 +1,21 @@
 / {
     behaviors {
+        cc_cv: cc_cv {
+        compatible = "zmk,behavior-hold-tap";
+        label = "CC_CV";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <0>;
+        flavor = "tap-preferred";
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+        };
         ca_cc_cv: ca_cc_cv {
             compatible = "zmk,behavior-tap-dance";
             label = "CA_CC_CV";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LC(C) >, <&kp LC(A)>;
+            bindings = <&cc_cv LC(V) LC(C)>, <&kp LC(A)>;
         };
         nxt_prv: nxt_prv {
             compatible = "zmk,behavior-tap-dance";
