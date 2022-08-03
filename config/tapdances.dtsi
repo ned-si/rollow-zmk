@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CA_CC_CV";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&cc_cv LC(V) LC(C)>, <&kp LC(A)>;
         };
         nxt_prv: nxt_prv {
@@ -39,7 +39,7 @@
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
         global-quick-tap;
-        bindings = <&kp>, <&kp>;
+        bindings = <&kp>, <&caps_word>;
         };
     };
 };
