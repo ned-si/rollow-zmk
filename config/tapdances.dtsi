@@ -1,6 +1,3 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
 / {
     behaviors {
         ca_cc_cv: ca_cc_cv {
