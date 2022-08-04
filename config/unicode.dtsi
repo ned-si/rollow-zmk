@@ -5,6 +5,8 @@
             label = "E_AIG";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N9>
@@ -16,6 +18,8 @@
             label = "E_GRV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N8>
@@ -27,6 +31,8 @@
             label = "E_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp A>
@@ -38,6 +44,8 @@
             label = "E_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp B>
@@ -49,6 +57,8 @@
             label = "A_GRV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N0>
@@ -60,6 +70,8 @@
             label = "A_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N2>
@@ -71,6 +83,8 @@
             label = "A_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N4>
@@ -82,6 +96,8 @@
             label = "I_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp E>
@@ -93,6 +109,8 @@
             label = "I_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp F>
@@ -104,6 +122,8 @@
             label = "O_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N4>
@@ -115,6 +135,8 @@
             label = "O_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N6>
@@ -126,6 +148,8 @@
             label = "U_GRV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp KP_N9>
@@ -137,6 +161,8 @@
             label = "U_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp B>
@@ -148,6 +174,8 @@
             label = "U_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp F &kp C>
@@ -159,6 +187,8 @@
             label = "C_CED";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp E &kp KP_N7>
@@ -170,6 +200,8 @@
             label = "DEGR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N0 &kp B &kp KP_N0>
@@ -181,6 +213,8 @@
             label = "EURO";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N2 &kp KP_N0 &kp A &kp C>
@@ -192,6 +226,8 @@
             label = "DEAD_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N2>
@@ -203,6 +239,8 @@
             label = "DEAD_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LS(LC(U))>
                 , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N8>
