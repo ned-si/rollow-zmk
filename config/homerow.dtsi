@@ -59,7 +59,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "TH_HT";
         #binding-cells = <2>;
-        tapping-term-ms = <100>;
+        tapping-term-ms = <150>;
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
         global-quick-tap;
