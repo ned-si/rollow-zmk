@@ -21,7 +21,7 @@
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    HM_A  HM_S  HM_D  HM_F  HM_G    HM_H  HM_J   HM_K      HM_L    HM_SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-      &trans &th_ht SYM TAB &ca_cc_cv   &kp A &th_ht NUM SPACE &kp C_PP
+      &trans &th_ht SYM TAB &ca_cc_cv   &kp C_PP &th_ht NUM SPACE &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
                 };
