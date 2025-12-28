@@ -1,25 +1,94 @@
-// layers
+#include "homerow.dtsi"
+
+// Layers
 #define MAIN 0
 #define SYM 1
 #define NUM 2
-#define ACC 3
-#define NAV 4
+#define NAV 3
+#define ARR 4
+#define THU 5
 
-//homerow
-#define HM_A &hm_asemi LGUI A
-#define HM_S &hm_sl LALT S
-#define HM_D &hm_dk LCTRL D
-#define HM_F &hm_fj LSHFT F
-#define HM_G &hm_gh ACC G
-#define HM_SEMI &hm_asemi LGUI SEMI
-#define HM_L &hm_sl LALT L
-#define HM_K &hm_dk LCTRL K
-#define HM_J &hm_fj LSHFT J
-#define HM_H &hm_gh ACC H
+// Home modifiers
+#define CTL_Q &hm_qsemi LCTRL Q
+#define ALT_W &hm_wy LALT W
+#define CMD_F &hm_fu LGUI F
+#define SFT_T &hm_tn LSHFT T
+#define SFT_N &hm_tn LSHFT N
+#define CMD_U &hm_fu LGUI U
+#define ALT_Y &hm_wy LALT Y
+#define CTL_SEMI &hm_qsemi LCTRL SEMI
 
-//bluetooth
-#define BT0 &bt BT_SEL 0 
-#define BT1 &bt BT_SEL 1 
-#define BT2 &bt BT_SEL 2 
-#define BT3 &bt BT_SEL 3 
-#define BT4 &bt BT_SEL 4 
+// Layer tap hold shortcuts
+#define BSP_SYM &th_ht SYM BSPC
+#define TAB_SFT &mt LSHFT TAB
+#define MIN_ARR &th_ht ARR MINUS
+#define SPC_NAV &th_ht NAV SPACE
+#define NUM_Z &th_ht NUM Z
+
+// Nav shortcuts
+#define P_HIST &kp LG(LBKT)
+#define N_HIST &kp LG(RBKT)
+#define P_TAB &kp LG(LS(LBKT))
+#define N_TAB &kp LG(LS(RBKT))
+#define N_WIND &kp LG(GRAVE)
+#define SCR_CAP &kp LG(LS(N5))
+#define N_CUT &kp LG(X)
+#define N_COPY &kp LG(C)
+#define N_PASTE &kp LG(V)
+#define S_PASTE &kp LG(LS(P))
+#define ZOOM_MIC &kp LG(LS(A))
+#define ZOOM_VID &kp LG(LS(V))
+
+// Bluetooth
+#define BT0 &bt BT_SEL 0
+#define BT1 &bt BT_SEL 1
+#define BT2 &bt BT_SEL 2
+#define BT3 &bt BT_SEL 3
+#define BT4 &bt BT_SEL 4
+#define BT_CLEAR &bt BT_CLR
+#define BT_CLEARA &bt BT_CLR_ALL
+
+// Arrange (Magnet app shortcuts)
+// 1/3s
+#define LEFT_1_3 &kp LC(LA(D))
+#define MID_1_3 &kp LC(LA(F))
+#define RIGHT_1_3 &kp LC(LA(G))
+// 2/3s
+#define LEFT_2_3 &kp LC(LA(E))
+#define RIGHT_2_3 &kp LC(LA(T))
+// 1/6s
+#define ARR_1_6 &kp LC(LA(N1))
+#define ARR_2_6 &kp LC(LA(N2))
+#define ARR_3_6 &kp LC(LA(N3))
+#define ARR_4_6 &kp LC(LA(N4))
+#define ARR_5_6 &kp LC(LA(N5))
+#define ARR_6_6 &kp LC(LA(N6))
+// 5/6s
+#define LEFT_5_6 &kp LC(LA(COMMA))
+#define RIGHT_5_6 &kp LC(LA(DOT))
+// 1/2s
+#define LEFT_1_2 &kp LC(LA(LEFT))
+#define RIGHT_1_2 &kp LC(LA(RIGHT))
+#define TOP_1_2 &kp LC(LA(UP))
+#define BOT_1_2 &kp LC(LA(DOWN))
+// 1/4s
+#define TOP_LEFT &kp LC(LA(U))
+#define TOP_RIGHT &kp LC(LA(I))
+#define BOT_LEFT &kp LC(LA(J))
+#define BOT_RIGHT &kp LC(LA(K))
+// Other
+#define A_FULLSCR &kp LC(LA(ENTER))
+#define A_CENTRE &kp LC(LA(C))
+#define P_SCREEN &kp LC(LA(LG(LEFT)))
+#define N_SCREEN &kp LC(LA(LG(RIGHT)))
+#define A_RESTORE &kp LC(LA(BSPC))
+
+// Thumb layer
+#define INPUT_LANG &kp LG(LC(LA(SPACE)))
+#define TXT_PLUS &kp LG(EQUAL)
+#define TXT_MINUS &kp LG(MINUS)
+#define EMOJI &kp LG(LC(SPACE))
+
+// Xcode shortcuts
+#define LINE_UP &kp LG(LA(LBKT))
+#define LINE_DN &kp LG(LA(RBKT))

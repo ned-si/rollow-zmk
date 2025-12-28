@@ -18,50 +18,152 @@
 
                 default_layer {
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
-   HM_A  HM_S  HM_D  HM_F  HM_G    HM_H  HM_J   HM_K      HM_L    HM_SEMI
-   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-      &trans &th_ht SYM TAB &ca_cc_cv   &kp C_PP &th_ht NUM SPACE &trans
-                        >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
-                };
+/**
+ *      ,-----------------------------------------------------.         .------------------------------------------------------.
+ *      |   Q     |    W     |    F     |    P     |    G     |         |    J     |    L     |    U     |    Y     |    ;     |
+ *      |  CTRL   |   ALT    |   CMD    |          |          |         |          |          |   CMD    |   ALT    |   CTRL   |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      |   A     |    R     |    S     |    T     |    D     |         |    H     |    N     |    E     |    I     |    O     |
+ *      |         |          |          |  Shift   |          |         |          |  Shift   |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      |   Z     |    X     |    C     |    V     |    B     |         |    K     |    M     |    ,     |    .     |    '     |
+ *      |  NUM    |          |          |          |          |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *                           |    NUM   |   BSP    |   TAB    |         |    -     |  Space   |  Enter   |
+ *                           |----------|   SYM    |   SFT    |         |   Arr    |   NAV    |----------|
+ *                           |    Up    |---------------------'         `---------------------|  Right   |
+ *                           |   Down   |                                                     |  Left    |
+ *                           `----------'                                                     `----------'
+ **/
 
+        CTL_Q      ALT_W      CMD_F      &kp P      &kp G               &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
+        &kp A      &kp R      &kp S      SFT_T      &kp D               &kp H      SFT_N      &kp E      &kp I      &kp O
+        NUM_Z      &kp X      &kp C      &kp V      &kp B               &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
+                              &none      BSP_SYM    TAB_SFT             MIN_ARR    SPC_NAV    &none
+                        >;
+                        sensor-bindings = <
+                                 &inc_dec_kp DOWN UP                    &inc_dec_kp RIGHT LEFT
+                        >;
+                };
+                
                 sym_layer {
                         bindings = <
-   &trans       &trans     &kp EQUAL &kp AMPS  &degr      &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
-   &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
-   &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp PLUS &kp EQUAL &kp LPAR &kp RPAR  &kp BSLH
-                           &trans    &trans    &trans     &kp UNDER &mo NAV  &trans
+/**
+ *      ,-----------------------------------------------------.         .------------------------------------------------------.
+ *      |   !     |    @     |    *     |    &     |    |     |         |    |     |    [     |    ^     |    ]     |    :     |
+ *      |         |          |          |          |          |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      |   ~     |    <     |    %     |    >     |    £     |         |    ?     |    (     |    $     |    )     |    /     |
+ *      |         |          |          |          |          |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      |   `     |    +     |    -     |    =     |    €     |         |    +     |    {     |    #     |    }     |    \     |
+ *      |         |          |          |          |          |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *                           |    NUM   |   BSP    |   TAB    |         |    -     |  Space   |  Enter   |
+ *                           |----------|   SYM    |   SFT    |         |   Arr    |   NAV    |----------|
+ *                           |    Up    |---------------------'         `---------------------| Page Up  |
+ *                           |   Down   |                                                     | Page Down|
+ *                           `----------'                                                     `----------'
+ **/
+ 
+        &kp EXCL   &kp AT     &kp ASTRK  &kp AMPS   &kp PIPE            &kp PIPE   &kp LBKT   &kp CARET  &kp RBKT   &kp COLON
+        &kp TILDE  &kp LT     &kp PRCNT  &kp GT     &kp LA(N3)          &kp QMARK  &kp LPAR   &kp DLLR   &kp RPAR   &kp FSLH
+        &kp GRAVE  &kp PLUS   &kp MINUS  &kp EQUAL  &kp LA(LS(N2))      &kp PLUS   &kp LBRC   &kp HASH   &kp RBRC   &kp BSLH
+                              &trans     &trans     &trans              &trans     &trans     &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <
+                                &inc_dec_kp DOWN UP                     &inc_dec_kp PAGE_UP PAGE_DOWN
+                        >;
                 };
 
                 num_layer {
                         bindings = <
-   &kp F12   &kp F7    &kp F8    &kp F9    &trans      &trans    &kp N7    &kp N8     &kp N9   &trans
-   &kp F11   &kp F4    &kp F5    &kp F6    &trans      &kp PLUS  &kp N4    &kp N5     &kp N6   &kp N0
-   &kp F10   &kp F1    &kp F2    &kp F3    &trans      &kp EQUAL &kp N1    &kp N2     &kp N3   &kp DOT
-                       &trans    &mo NAV   &trans      &trans    &trans    &trans
+/**
+ *      ,-----------------------------------------------------.         .------------------------------------------------------.
+ *      | BT 0    |  BT 1    |  BT 2    |  BT 3    |  BT      |         |    :     |    7     |    8     |    9     |    0     |
+ *      |         |          |          |          |  Clear   |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      |         |   CUT    |   COPY   |  PASTE   |          |         |    .     |    4     |    5     |    6     |    /     |
+ *      |         |          |          |          |          |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      |  NUM    |          |          |          |          |         |    +     |    1     |    2     |    3     |    *     |
+ *      |         |          |          |          |          |         |          |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *                           |    NUM   |   BSP    |   TAB    |         |    -     |    0     |  Enter   |
+ *                           |----------|   SYM    |   SFT    |         |   Arr    |          |----------|
+ *                           |    Up    |---------------------'         `---------------------|  Right   |
+ *                           |   Down   |                                                     |  Left    |
+ *                           `----------'                                                     `----------'
+ **/
+ 
+        BT0        BT1        BT2        BT3        BT_CLEAR            &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0
+        &none      N_CUT      N_COPY     N_PASTE    &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH
+        &trans     &none      &none      &none      BT_CLEARA           &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
+                              &trans     &trans     &trans              &trans     &kp N0     &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
-                };
-
-                accents_layer {
-                        bindings = <
-   &a_cir   &trans   &e_aig   &e_grv   &trans   &dead_uml   &u_grv   &i_cir   &o_cir   &trans
-   &a_grv   &trans   &e_cir   &trans   &trans   &dead_cir   &u_cir   &i_uml   &o_uml   &trans
-   &trans   &trans   &c_ced   &trans   &trans   &trans      &trans   &trans   &trans   &trans
-                     &trans   &trans   &trans   &trans      &trans   &trans
+                        sensor-bindings = <
+                                &inc_dec_kp DOWN UP                     &inc_dec_kp RIGHT LEFT
                         >;
                 };
 
                 nav_layer {
                         bindings = <
-   BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans
-   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-   &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans
-                         &trans     &trans    &trans      &trans    &trans    &trans
-                         >;
+/**
+ *      ,-----------------------------------------------------.         .------------------------------------------------------.
+ *      | Vol +   |          |          |          |  Xcode   |         |  Zoom    |   Home   |    Up    |   End    | Page Up  |
+ *      |         |          |          |          |  Line Up |         |  Mic     |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      | Vol -   |          |          |          |  Xcode   |         |  Zoom    |   Left   |   Down   |  Right   | Page Dn  |
+ *      |         |          |          |          |  Line Dn |         |  Video   |          |          |          |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      | Mute    |          |  Screen  |          |          |         |  Prev    |   Prev   |   Next   |  Next    |   Next   |
+ *      |         |          | Capture  |          |          |         | History  |   Tab    | Window   |  Tab     |  History |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *                           |  Mute    |   Del    |   TAB    |         |    -     |  Space   |  Enter   |
+ *                           |----------|   FUN    |   SFT    |         |   Arr    |   NAV    |----------|
+ *                           |  Vol +   |---------------------'         `---------------------|  Right   |
+ *                           |  Vol -   |                                                     |  Left    |
+ *                           `----------'                                                     `----------'
+ **/
+
+        &kp C_VOL_UP   &none      &none      &none      LINE_UP             ZOOM_MIC   &kp HOME   &kp UP     &kp END    &kp PAGE_UP
+        &kp C_VOL_DN   &none      &none      &none      LINE_DN             ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
+        &kp C_MUTE     &none      SCR_CAP    &none      &none               P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
+                              &kp C_MUTE &kp DEL    &trans              &trans     SPC_NAV     &trans
+                        >;
+                        sensor-bindings = <
+                                &inc_dec_kp C_VOL_UP C_VOL_DN           &inc_dec_kp RIGHT LEFT
+                        >;
+                };
+
+                arr_layer {
+                        bindings = <
+/**
+ *      ,-----------------------------------------------------.         .------------------------------------------------------.
+ *      |  1/6th  |  2/6th   |  Full    |  5/6th   |  6/6th   |         |          |   Top    |   Top    |   Top    |          |
+ *      |         |          |  Screen  |          |          |         |          |   Left   |   Half   |  Right   |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      | L 1/3rd | L 2/3rds | C 1/3rd  | R 2/3rds | R 1/3rd  |         |  Prev    |   Left   |   Down   |  Right   |  Next    |
+ *      |         |          |          |          |          |         | Screen   |   Half   |          |  Half    |  Screen  |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *      | L 5/6th |  3/6th   |  Centre  |  4/6th   | R 5/6th  |         |          |  Bottom  |  Bottom  |  Bottom  |          |
+ *      |         |          |          |          |          |         |          |  Left    |  Half    |  Right   |          |
+ *      -------------------------------------------------------         --------------------------------------------------------
+ *                           |  Mute    |   FUN    |   TAB    |         |    -     |  Space   |  Enter   |
+ *                           |----------|          |   SFT    |         |   Arr    |   NAV    |----------|
+ *                           |  Vol +   |---------------------'         `---------------------|  Right   |
+ *                           |  Vol -   |                                                     |  Left    |
+ *                           `----------'                                                     `----------'
+ **/
+
+        ARR_1_6    ARR_2_6    A_FULLSCR  ARR_5_6    ARR_6_6             &none      TOP_LEFT   TOP_1_2    TOP_RIGHT  &none
+        LEFT_1_3   LEFT_2_3   MID_1_3    RIGHT_2_3  RIGHT_1_3           P_SCREEN   LEFT_1_2   BOT_1_2    RIGHT_1_2  N_SCREEN
+        LEFT_5_6   ARR_3_6    A_CENTRE   ARR_4_6    RIGHT_5_6           &none      BOT_LEFT   A_RESTORE  BOT_RIGHT  &none
+                              &trans     &trans     &trans              &trans     &trans     &trans
+                        >;
+                        sensor-bindings = <
+                                &inc_dec_kp C_VOL_UP C_VOL_DN           &inc_dec_kp RIGHT LEFT
+                        >;
                 };
         };
 };

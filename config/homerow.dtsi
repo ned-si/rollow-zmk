@@ -1,8 +1,8 @@
 / {
     behaviors {
-        hm_asemi: homerow_asemi {
+        hm_qsemi: homerow_qsemi {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_ASEMI";
+        label = "HOMEROW_QSEMI";
         #binding-cells = <2>;
         tapping-term-ms = <220>;
         quick-tap-ms = <0>;
@@ -11,9 +11,9 @@
         bindings = <&kp>, <&kp>;
         };
 
-        hm_sl: homerow_sl {
+        hm_wy: homerow_wy {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_SL";
+        label = "HOMEROW_WY";
         #binding-cells = <2>;
         tapping-term-ms = <220>;
         quick-tap-ms = <0>;
@@ -22,9 +22,9 @@
         bindings = <&kp>, <&kp>;
         };
 
-        hm_dk: homerow_dk {
+        hm_fu: homerow_fu {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_DK";
+        label = "HOMEROW_FU";
         #binding-cells = <2>;
         tapping-term-ms = <170>;
         quick-tap-ms = <0>;
@@ -33,9 +33,9 @@
         bindings = <&kp>, <&kp>;
         };
 
-        hm_fj: homerow_fj {
+        hm_tn: homerow_tn {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_FJ";
+        label = "HOMEROW_TN";
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         quick-tap-ms = <0>;
