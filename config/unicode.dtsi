@@ -2,7 +2,6 @@
     macros {
 
         e_aig: e_aig {
-            label = "E_AIG";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -15,7 +14,6 @@
         };
 
         e_grv: e_grv {
-            label = "E_GRV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -28,7 +26,6 @@
         };
 
         e_cir: e_cir {
-            label = "E_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -41,7 +38,6 @@
         };
 
         e_uml: e_uml {
-            label = "E_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -54,7 +50,6 @@
         };
 
         a_grv: a_grv {
-            label = "A_GRV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -67,7 +62,6 @@
         };
 
         a_cir: a_cir {
-            label = "A_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -80,7 +74,6 @@
         };
 
         a_uml: a_uml {
-            label = "A_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -93,7 +86,6 @@
         };
 
         i_cir: i_cir {
-            label = "I_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -106,7 +98,6 @@
         };
 
         i_uml: i_uml {
-            label = "I_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -119,7 +110,6 @@
         };
 
         o_cir: o_cir {
-            label = "O_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -132,7 +122,6 @@
         };
 
         o_uml: o_uml {
-            label = "O_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -145,7 +134,6 @@
         };
 
         u_grv: u_grv {
-            label = "U_GRV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -158,7 +146,6 @@
         };
 
         u_cir: u_cir {
-            label = "U_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -171,7 +158,6 @@
         };
 
         u_uml: u_uml {
-            label = "U_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -184,7 +170,6 @@
         };
 
         c_ced: c_ced {
-            label = "C_CED";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -197,7 +182,6 @@
         };
 
         degr: degr {
-            label = "DEGR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -210,7 +194,6 @@
         };
 
         euro: euro {
-            label = "EURO";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -223,7 +206,6 @@
         };
 
         dead_cir: dead_cir {
-            label = "DEAD_CIR";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -236,7 +218,6 @@
         };
 
         dead_uml: dead_uml {
-            label = "DEAD_UML";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
